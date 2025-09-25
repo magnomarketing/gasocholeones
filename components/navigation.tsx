@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone } from "lucide-react"
+import Image from "next/image"
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -23,14 +24,15 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-red-600 to-orange-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">🦁</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-red-600 font-bold text-lg leading-tight">Gas Ocho</span>
-              <span className="text-orange-500 font-semibold text-sm leading-tight">Leones</span>
-            </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/gas-ocho-leones-logo.png"
+              alt="Gas Ocho Leones"
+              width={180}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Menu */}
