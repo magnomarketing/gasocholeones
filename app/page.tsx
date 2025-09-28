@@ -21,9 +21,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                  
-                </div>
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center"></div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-balance">Gas Ocho Leones</h1>
               </div>
               <p className="text-xl text-balance leading-relaxed">
@@ -60,15 +58,15 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <div className="inline-block">
               <h2 className="text-6xl md:text-8xl font-bold tracking-tight mb-4">
-                
                 <span className="text-transparent bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text">
                   {" "}
                   Gas LP en Tabasco
                 </span>
               </h2>
-              
             </div>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-4 tracking-normal mt-2">Conecta con nosotros para tu próximo pedido</p>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-4 tracking-normal mt-2">
+              Conecta con nosotros para tu próximo pedido
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -118,12 +116,12 @@ export default function HomePage() {
 
           {/* Bottom CTA */}
           <div className="text-center mt-16">
-            <p className="text-gray-600 text-lg mb-6">Consulta las estacinoes abiertas las 24 horas                              </p>
+            <p className="text-gray-600 text-lg mb-6">Consulta las estaciones abiertas las 24 horas</p>
             <Button
               size="lg"
               className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white border-0"
             >
-              Ver Estaciones de Gas LP en Tabasco      
+              Ver Estaciones de Gas LP en Tabasco
             </Button>
           </div>
         </div>
@@ -221,7 +219,7 @@ export default function HomePage() {
                 <CardTitle className="text-lg">Recarga Cilindros</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600 mb-4">Pide la recolección de tu cilindro por whtasapp        </p>
+                <p className="text-sm text-gray-600 mb-4">Pide la recolección de tu cilindro por WhatsApp</p>
                 <Link href="/servicios">
                   <Button size="sm" className="bg-red-600 hover:bg-red-700">
                     Ver Más
@@ -243,14 +241,14 @@ export default function HomePage() {
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                     />
                   </svg>
                 </div>
                 <CardTitle className="text-lg">Gas Residencial</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600 mb-4">Solicta tu servicio de Gas estacionario     </p>
+                <p className="text-sm text-gray-600 mb-4">Solicita tu servicio de Gas estacionario</p>
                 <Link href="/servicios">
                   <Button size="sm" className="bg-red-600 hover:bg-red-700">
                     Ver Más
@@ -269,17 +267,18 @@ export default function HomePage() {
                     strokeWidth={2}
                     stroke="currentColor"
                   >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.001 3.001 0 01-.621-1.72c0-.966.456-1.816 1.171-2.36"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                     />
                   </svg>
                 </div>
                 <CardTitle className="text-lg">Para Negocios</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600 mb-4">Contactanos para una alianza con precio especual        </p>
+                <p className="text-sm text-gray-600 mb-4">Contactanos para una alianza con precio especial</p>
                 <Link href="/servicios">
                   <Button size="sm" className="bg-red-600 hover:bg-red-700">
                     Ver Más
@@ -296,7 +295,7 @@ export default function HomePage() {
                 <CardTitle className="text-lg">Emergencias 24/7</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600 mb-4">Te contactamos a Protección Civil Tabasco                  </p>
+                <p className="text-sm text-gray-600 mb-4">Te contactamos a Protección Civil Tabasco</p>
                 <Button size="sm" className="bg-red-600 hover:bg-red-700">
                   <Phone className="w-4 h-4 mr-1" />
                   Llamar
@@ -308,7 +307,7 @@ export default function HomePage() {
           <div className="text-center mt-12">
             <Link href="/servicios">
               <Button size="lg" className="bg-red-600 hover:bg-red-700">
-                Contáctanos por Whatsapp   
+                Contáctanos por WhatsApp
               </Button>
             </Link>
           </div>
@@ -325,7 +324,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-red-600 hover:bg-red-700">
               <Phone className="w-4 h-4 mr-2" />
-              Solicita Servicio a domicilio    
+              Solicita Servicio a domicilio
             </Button>
             <Link href="/ubicaciones">
               <Button
