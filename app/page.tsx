@@ -7,13 +7,22 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-red-600 to-orange-500 text-white py-20">
-        <div className="container mx-auto px-4 max-w-6xl">
+      <section className="relative bg-gradient-to-br from-red-600 to-orange-500 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/images/gas-station-background.jpg"
+            alt="Gas station background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-red-600/80 to-orange-500/80"></div>
+        </div>
+
+        <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-red-600">🦁</span>
+                  
                 </div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-balance">Gas Ocho Leones</h1>
               </div>
@@ -36,7 +45,7 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <img
-                src="/familia-tabasque-a-llenando-tanque-de-gas-en-estac.png"
+                src="/familia-tabasque-a-llenando-tanque-de-gas-en-estac.jpg"
                 alt="Familia tabasqueña llenando tanque de gas en estación"
                 className="rounded-lg shadow-2xl w-full"
               />
@@ -51,15 +60,15 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <div className="inline-block">
               <h2 className="text-6xl md:text-8xl font-bold tracking-tight mb-4">
-                <span className="text-gray-900">Gas</span>
+                
                 <span className="text-transparent bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text">
                   {" "}
-                  LP
+                  Gas LP en Tabasco
                 </span>
               </h2>
-              <div className="h-1 bg-gradient-to-r from-orange-500 to-yellow-500 w-full"></div>
+              
             </div>
-            <p className="text-xl text-gray-600 mt-6 max-w-2xl mx-auto">Conecta con nosotros para tu próximo pedido</p>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-4 tracking-normal mt-2">Conecta con nosotros para tu próximo pedido</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -109,12 +118,12 @@ export default function HomePage() {
 
           {/* Bottom CTA */}
           <div className="text-center mt-16">
-            <p className="text-gray-600 text-lg mb-6">Disponible las 24 horas para emergencias</p>
+            <p className="text-gray-600 text-lg mb-6">Consulta las estacinoes abiertas las 24 horas                              </p>
             <Button
               size="lg"
               className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white border-0"
             >
-              Hacer Pedido Ahora
+              Ver Estaciones de Gas LP en Tabasco      
             </Button>
           </div>
         </div>
@@ -212,7 +221,7 @@ export default function HomePage() {
                 <CardTitle className="text-lg">Recarga Cilindros</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600 mb-4">Servicio tradicional confiable</p>
+                <p className="text-sm text-gray-600 mb-4">Pide la recolección de tu cilindro por whtasapp        </p>
                 <Link href="/servicios">
                   <Button size="sm" className="bg-red-600 hover:bg-red-700">
                     Ver Más
@@ -241,7 +250,7 @@ export default function HomePage() {
                 <CardTitle className="text-lg">Gas Residencial</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600 mb-4">Instalación completa para tu hogar</p>
+                <p className="text-sm text-gray-600 mb-4">Solicta tu servicio de Gas estacionario     </p>
                 <Link href="/servicios">
                   <Button size="sm" className="bg-red-600 hover:bg-red-700">
                     Ver Más
@@ -270,7 +279,7 @@ export default function HomePage() {
                 <CardTitle className="text-lg">Para Negocios</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600 mb-4">Soluciones comerciales especializadas</p>
+                <p className="text-sm text-gray-600 mb-4">Contactanos para una alianza con precio especual        </p>
                 <Link href="/servicios">
                   <Button size="sm" className="bg-red-600 hover:bg-red-700">
                     Ver Más
@@ -287,7 +296,7 @@ export default function HomePage() {
                 <CardTitle className="text-lg">Emergencias 24/7</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600 mb-4">Atención inmediata disponible</p>
+                <p className="text-sm text-gray-600 mb-4">Te contactamos a Protección Civil Tabasco                  </p>
                 <Button size="sm" className="bg-red-600 hover:bg-red-700">
                   <Phone className="w-4 h-4 mr-1" />
                   Llamar
@@ -299,7 +308,7 @@ export default function HomePage() {
           <div className="text-center mt-12">
             <Link href="/servicios">
               <Button size="lg" className="bg-red-600 hover:bg-red-700">
-                Ver Todos los Servicios
+                Contáctanos por Whatsapp   
               </Button>
             </Link>
           </div>
@@ -316,7 +325,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-red-600 hover:bg-red-700">
               <Phone className="w-4 h-4 mr-2" />
-              Solicitar Cotización Gratuita
+              Solicita Servicio a domicilio    
             </Button>
             <Link href="/ubicaciones">
               <Button

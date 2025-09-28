@@ -15,7 +15,6 @@ export default function Navigation() {
     { href: "/testimonios", label: "Testimonios" },
     { href: "/seguridad", label: "Seguridad" },
     { href: "/lealtad", label: "Programa Leones" },
-    { href: "/ubicaciones", label: "Ubicaciones" },
     { href: "/contacto", label: "Contacto" },
   ]
 
