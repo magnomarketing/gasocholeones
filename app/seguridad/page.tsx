@@ -312,7 +312,7 @@ export default function SeguridadPage() {
         </div>
       </section>
 
-      {/* Safety Training */}
+
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-12">
