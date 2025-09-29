@@ -18,7 +18,7 @@ export default function HomePage() {
         </div>
 
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 items-center gap-0">
             <div className="space-y-6">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center"></div>
@@ -30,14 +30,14 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100">
-                  Solicita tu Instalación
+                  Pedor Gas para mi Casa       
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
                   className="border-white text-white hover:bg-white hover:text-red-600 bg-transparent"
                 >
-                  Conoce Nuestros Precios
+                  {"Pedir Gas para mi Negocio"}
                 </Button>
               </div>
             </div>
