@@ -12,8 +12,7 @@ export default function Navigation() {
   const menuItems = [
     { href: "/", label: "Inicio" },
     { href: "/servicios", label: "Servicios" },
-    { href: "/testimonios", label: "Testimonios" },
-    { href: "/seguridad", label: "Seguridad" },
+    { href: "/estaciones", label: "Estaciones" },
     { href: "/lealtad", label: "Programa Leones" },
     { href: "/contacto", label: "Contacto" },
   ]
