@@ -43,9 +43,9 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <img
-                src="/familia-tabasque-a-llenando-tanque-de-gas-en-estac.jpg"
+                src="/images/design-mode/lenweb.webp"
                 alt="Familia tabasqueña llenando tanque de gas en estación"
-                className="rounded-lg shadow-2xl w-full"
+                className="rounded-lg shadow-2xl shadow-none h-auto w-[90%] py-0"
               />
             </div>
           </div>
